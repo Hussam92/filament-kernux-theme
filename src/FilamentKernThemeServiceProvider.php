@@ -24,8 +24,5 @@ class FilamentKernThemeServiceProvider extends ServiceProvider
         ], 'filament-kernux-theme-views');
     }
 
-    public function boot(): void
-    {
-        //
-    }
+    public function boot(): void {}
 }
