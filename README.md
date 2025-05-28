@@ -15,31 +15,57 @@ Below is a checklist of all KERN-UX components that have been implemented in thi
 
 ### Components
 
-- [ ] Buttons
-- [ ] Forms
-- [ ] Tables
-- [ ] Modals
-- [ ] Notifications
-- [ ] Navigation
-- [ ] Typography
-- [ ] Icons
-- [ ] Cards
-- [ ] Dropdowns
-- [ ] Progress Indicators
-- [ ] Tooltips
+- [ ] Accordion
+- [ ] Alert
+- [ ] Badge
+- [ ] Button
+- [ ] Card
+- [ ] Description List
+- [ ] Dialog
+- [ ] Divider
+- [ ] Fieldset
+- [ ] Form Inputs
+   - [ ] Input Checkboxes
+   - [ ] Input Date
+   - [ ] Input E-Mail
+   - [ ] Input File
+   - [ ] Input Number
+   - [ ] Input Password
+   - [ ] Input Radios
+   - [ ] Input Select
+   - [ ] Input Tel
+   - [ ] Input Text
+   - [ ] Input Textarea
+   - [ ] Input Url
+- [ ] Grid
+- [ ] Icon
+- [ ] Kopfzeile
+- [ ] Link
+- [ ] Loader
+- [ ] Progress
+- [ ] Summary
+- [ ] Table
 - [ ] Tabs
-- [ ] Accordions
+- [ ] Task List
+- [ ] Text
+  - [ ] Heading
+  - [ ] Title
+  - [ ] Preline
+  - [ ] Subline
+  - [ ] Label
+  - [ ] Body
+
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/filament-kernux-theme.git
+   git clone https://github.com/hussam92/filament-kernux-theme.git
    ```
 
 2. Install the theme in your Filament PHP application:
    ```bash
-   composer require your-username/filament-kernux-theme
+   composer require hussam92/filament-kernux-theme
    ```
 
 3. Publish the assets:
