@@ -1,0 +1,82 @@
+{
+    "name": "hussam92/filament-kernux-theme",
+    "type": "library",
+    "version": "0.0.1",
+    "description": "A FilamentPHP theme based on the KERN-UX design system. https://www.kern-ux.de/",
+    "keywords": [
+        "php",
+        "laravel",
+        "filament",
+        "filamentphp",
+        "filament-theme",
+        "theme",
+        "kernux-theme",
+        "kern-ux"
+    ],
+    "homepage": "https://github.com/hussam92/filament-kernux-theme",
+    "support": {
+        "issues": "https://github.com/hussam92/filament-kernux-theme/issues",
+        "source": "https://github.com/hussam92/filament-kernux-theme"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hussam Itani",
+            "email": "hussam.itani.1992@googlemail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.2",
+        "filament/support": "^3.2",
+        "illuminate/contracts": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "nunomaduro/collision": "^7.10.0||^8.1.1",
+        "larastan/larastan": "^2.0.1||^3.0",
+        "orchestra/testbench": "^8.22.0||^9.0.0||^10.0.0",
+        "pestphp/pest": "^2.1||^3.0",
+        "pestphp/pest-plugin-arch": "^2.0||^3.0",
+        "pestphp/pest-plugin-laravel": "^2.0||^3.0",
+        "pestphp/pest-plugin-livewire": "^2.1||^3.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan-deprecation-rules": "^1.0||^2.0",
+        "phpstan/phpstan-phpunit": "^1.0||^2.0",
+        "spatie/laravel-ray": "^1.26"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kern\\FilamentKernTheme\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kern\\FilamentKernTheme\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kern\\FilamentKernTheme\\FilamentKernThemeServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
